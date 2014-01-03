@@ -1,5 +1,9 @@
 Posts = new Meteor.Collection('posts');
-
+Tags.TagsMixin(Posts);
+Posts.allowTags(function (userId) {
+    // only allow if user is logged in
+    return !!userId;
+});
 Posts.allow({
   update: ownsDocument,
   remove: ownsDocument

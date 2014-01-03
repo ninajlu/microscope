@@ -5,7 +5,8 @@
       "iron-router": {},
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "tags": {}
     },
     "packages": {
       "iron-router": {
@@ -27,6 +28,11 @@
         "git": "https://github.com/Multiply/iron-router-progress.git",
         "tag": "v0.2.0",
         "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
+      },
+      "tags": {
+        "git": "https://github.com/apendua/meteor-tags.git",
+        "tag": "v0.1.2.2",
+        "commit": "613382880617178276a7fbbcfe07812407d48e6b"
       }
     }
   }

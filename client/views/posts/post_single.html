@@ -6,6 +6,7 @@
       <p style="width: 900px"><br/>
         {{message}}
         <br/><br/>
+        <b>Tags: </b>{{renderTags}} <br/>
         {{pluralize votes "Vote"}},
         submitted by {{author}},
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
