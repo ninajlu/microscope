@@ -4,6 +4,7 @@
     "accounts-ui-bootstrap-dropdown": {},
     "spin": {},
     "iron-router-progress": {},
-    "tags": {}
+    "tags": {},
+    "Bootstrap3-Typeahead": {}
   }
 }

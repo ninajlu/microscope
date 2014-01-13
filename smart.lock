@@ -6,13 +6,14 @@
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
       "iron-router-progress": {},
-      "tags": {}
+      "tags": {},
+      "Bootstrap3-Typeahead": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.1",
-        "commit": "4e1ee0581d68bff422a915dacb0bd30eae10fe08"
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
       },
       "accounts-ui-bootstrap-dropdown": {
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
@@ -21,8 +22,8 @@
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
-        "tag": "v0.2.0",
-        "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
@@ -33,6 +34,11 @@
         "git": "https://github.com/apendua/meteor-tags.git",
         "tag": "v0.1.2.2",
         "commit": "613382880617178276a7fbbcfe07812407d48e6b"
+      },
+      "Bootstrap3-Typeahead": {
+        "git": "https://github.com/JustinSGray/meteor-Bootstrap-3-Typeahead.git",
+        "tag": "v0.1.1",
+        "commit": "770b69d73e559c9f6506daa0a034acab21169479"
       }
     }
   }

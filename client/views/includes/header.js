@@ -10,3 +10,23 @@ Template.header.helpers({
     return active && 'active';
   }
 });
+Template.header.rendered = function () {
+	//TODO: maybe we should cache this list (?)
+	//TODO: limit query to the most popular tags
+	var listOfTags = Meteor.tags.find({}, {reactive:false}).map(function (tag) {return tag.name});
+	console.log(listOfTags);
+	$("input[name='search']").typeahead({
+		source: listOfTags
+	});
+	$("input[name='search']").focus();
+};
+Template.header.events({
+	'click .submit': function (event) {
+		//TODO: find a way to tell Spark that we are
+		//      actually removing the DOM elements
+		console.log("hello");
+		console.log($("input[name='search']").attr('value'));
+		Router.go("/query/"+$("input[name='search']").attr('value')+"/10");
+	}
+});
+
