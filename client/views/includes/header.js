@@ -6,8 +6,10 @@ Template.header.helpers({
     var active = _.any(args, function(name) {
       return Router.current().route.name === name
     });
-    
     return active && 'active';
+  },
+  activeRoute: function(){
+  	return Router.current().route.name=="queryPosts";
   }
 });
 Template.header.rendered = function () {
