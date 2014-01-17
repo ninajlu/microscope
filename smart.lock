@@ -7,7 +7,8 @@
       "spin": {},
       "iron-router-progress": {},
       "tags": {},
-      "Bootstrap3-Typeahead": {}
+      "Bootstrap3-Typeahead": {},
+      "profile": {}
     },
     "packages": {
       "iron-router": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/JustinSGray/meteor-Bootstrap-3-Typeahead.git",
         "tag": "v0.1.1",
         "commit": "770b69d73e559c9f6506daa0a034acab21169479"
+      },
+      "profile": {
+        "git": "https://github.com/BeDifferential/meteor-profile.git",
+        "tag": "v0.0.7",
+        "commit": "4960d0603342e9fac279260f6f1812a273952bf3"
       }
     }
   }
