@@ -35,14 +35,14 @@ Meteor.methods({
         'This link has already been posted', 
         postWithSameLink._id);
     }
-     var result=HTTP.call("GET", "https://readability.com/api/content/v1/parser", {params: {url:postAttributes.url, token:"7985a81b635e503211fa5e3886bef7004588718e"}});
+    /* var result=HTTP.call("GET", "https://readability.com/api/content/v1/parser", {params: {url:postAttributes.url, token:"7985a81b635e503211fa5e3886bef7004588718e"}});
    var hey=JSON.parse(result.content);
     console.log(hey.lead_image_url);
    console.log(hey.title);
    var auth=hey.author;
    var ex=hey.excerpt;
    var cont=hey.content;
-   console.log("hi");
+   console.log("hi");*/
     // pick out the whitelisted keys
     var post = _.extend(_.pick(postAttributes, 'url', 'title', 'message'), {
       userId: user._id, 

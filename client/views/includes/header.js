@@ -17,10 +17,10 @@ Template.header.rendered = function () {
 	//TODO: limit query to the most popular tags
 	var listOfTags = Meteor.tags.find({}, {reactive:false}).map(function (tag) {return tag.name});
 	console.log(listOfTags);
-	$("input[name='search']").typeahead({
-		source: listOfTags
-	});
-	$("input[name='search']").focus();
+$("input[name='search']").typeahead({
+    source: listOfTags
+  });
+  $("input[name='search']").focus();
 };
 Template.header.events({
 	'click .submit': function (event) {

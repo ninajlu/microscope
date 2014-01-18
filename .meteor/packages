@@ -13,7 +13,7 @@ accounts-password
 iron-router-progress
 
 tags
-Bootstrap3-Typeahead
 http
 
 profile
+jquery-ui

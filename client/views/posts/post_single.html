@@ -8,7 +8,7 @@
         <br/><br/>
         <b>Tags: </b>{{renderTags}} <br/>
         {{pluralize votes "Vote"}},
-        submitted by {{author}},
+        submitted by <a href="{{pathFor 'userCardFromPost'}}">{{author}}</a>,
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>

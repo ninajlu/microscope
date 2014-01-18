@@ -6,6 +6,8 @@
     "iron-router-progress": {},
     "tags": {},
     "Bootstrap3-Typeahead": {},
-    "profile": {}
+    "profile": {},
+    "autocompletion": {},
+    "typeahead-js": {}
   }
 }
