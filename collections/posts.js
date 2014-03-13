@@ -52,7 +52,7 @@ Meteor.methods({
       upvoters: [], votes: 0,
       tags:[]
     });
-    
+    Meteor.users.update(user._id, {$inc: {postsCount: 1}});
     var postId = Posts.insert(post);
     console.log(post);
     return postId;
@@ -71,6 +71,7 @@ Meteor.methods({
       $addToSet: {upvoters: user._id},
       $inc: {votes: 1}
     });
+    Meteor.users.update(Posts.findOne(postId).userId, {$inc: {upvotesCount: 1}});
   }
 });
 }

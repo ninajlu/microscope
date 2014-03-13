@@ -1,5 +1,4 @@
 Comments = new Meteor.Collection('comments');
-
 Meteor.methods({
   comment: function(commentAttributes) {
     var user = Meteor.user();
@@ -22,7 +21,7 @@ Meteor.methods({
     
     // update the post with the number of comments
     Posts.update(comment.postId, {$inc: {commentsCount: 1}});
-    
+    Meteor.users.update(user._id, {$inc: {commentsCount: 1}});
     // create the comment, save the id
     comment._id = Comments.insert(comment);
     
