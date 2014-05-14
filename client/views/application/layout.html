@@ -2,8 +2,27 @@
   <div class="container">
     {{>header}}
     {{> errors}}
+    {{>lobby}}
     <div id="main" class="row-fluid">
       {{yield}}
+    </div>
+  </div>
+</template>
+
+<template name="lobby">
+  <div>
+    <div id="lobby">
+      {{#if count}}
+      <h1>{{count}} other players are in the lobby:</h1>
+      {{#each waiting }}
+      <div class="player">{{profile.name}}</div>
+      {{/each}}
+      {{/if}}
+      <div>
+        <button id="startgame" class="startgame" {{disabled}}>
+          {{#if count}} It's on! {{else}} Play solo {{/if}}
+        </button>
+      </div>
     </div>
   </div>
 </template>

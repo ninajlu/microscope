@@ -6,7 +6,7 @@ Meteor.publish('singlePost', function(id) {
   return id && Posts.find(id);
 });
 Meteor.publish('singleUser', function(id) {
-  return id && Meteor.users.find(id);
+  return id && Meteor.users.find({_id:id}, {fields: {'last_keepalive':1,'idle':1, 'profile':1, 'services':1,'friends': 1, 'picture': 1}});
 });
 
 Meteor.publish('comments', function(postId) {
@@ -24,4 +24,7 @@ Accounts.onCreateUser(function(options, user) {
   // for its existence later.
   user.profile = options.profile ? options.profile : {};
   return user;
+});
+Meteor.publish("allUserData", function () {
+  return Meteor.users.find({}, {fields: {'last_keepalive':1,'idle':1, 'profile':1, 'services':1,'friends':1,'picture': 1}});
 });

@@ -1,3 +1,4 @@
+
 Posts = new Meteor.Collection('posts');
 Tags.TagsMixin(Posts);
 Posts.allowTags(function (userId) {
